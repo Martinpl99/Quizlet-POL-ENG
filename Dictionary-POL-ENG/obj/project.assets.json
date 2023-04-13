@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C#\\Projekty\\Dictionary-POL-ENG\\Dictionary-POL-ENG\\Quizlet-POL-ENG.csproj",
+      "projectUniqueName": "D:\\C#\\Projekty\\Quizlet-POL-ENG\\Dictionary-POL-ENG\\Quizlet-POL-ENG.csproj",
       "projectName": "Quizlet-POL-ENG",
-      "projectPath": "D:\\C#\\Projekty\\Dictionary-POL-ENG\\Dictionary-POL-ENG\\Quizlet-POL-ENG.csproj",
+      "projectPath": "D:\\C#\\Projekty\\Quizlet-POL-ENG\\Dictionary-POL-ENG\\Quizlet-POL-ENG.csproj",
       "packagesPath": "C:\\Users\\mmroz\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\Projekty\\Dictionary-POL-ENG\\Dictionary-POL-ENG\\obj\\",
+      "outputPath": "D:\\C#\\Projekty\\Quizlet-POL-ENG\\Dictionary-POL-ENG\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mmroz\\AppData\\Roaming\\NuGet\\NuGet.Config",
