@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "KlhfA59Q56QTZ6tCF4mNwFFDzcjYg3FvAyPw1MRVB+KqCyAc8866HTPi/7cE3Tc090EFb9mcXV85CU2rj/8ytA==",
+  "success": true,
+  "projectFilePath": "D:\\C#\\Projekty\\Dictionary-POL-ENG\\Dictionary-POL-ENG\\Quizlet-POL-ENG.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mmroz\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

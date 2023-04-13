@@ -1,0 +1,106 @@
+﻿<Window x:Class="Dictionary_POL_ENG.AddWordWindow"
+        Name="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dictionary_POL_ENG"
+        Visibility="Visible"
+        mc:Ignorable="d"
+        Title="AddWordWindow" Height="500" Width="400" Background="CadetBlue">
+    <Grid>
+        <TextBox 
+            x:Name="polish_word"
+            HorizontalAlignment="Center"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            Height="50" Margin="0,65,0,0" 
+            TextWrapping="Wrap" 
+            FontSize="25"
+            VerticalAlignment="Top" 
+            Width="300"/>
+
+        <Label 
+            Content="Give Polish meaning:" 
+            HorizontalAlignment="Center" 
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            Height="50" 
+            Margin="0,10,0,0" 
+            FontSize="20"
+            Background="Bisque"
+            VerticalAlignment="Top" Width="300"/>
+
+        <Label 
+            Content="Give English meaning: " 
+            HorizontalAlignment="Center" 
+            FontSize="20"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            Height="55" 
+            Background="Bisque"
+            Margin="0,145,0,0" 
+            VerticalAlignment="Top" 
+            Width="300"/>
+
+        <TextBox 
+            HorizontalAlignment="Center" 
+            Height="50" 
+            x:Name="englsh_word"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            FontSize="25"
+            TextWrapping="Wrap" 
+            Text="" 
+            VerticalAlignment="Top" 
+            Width="300" Margin="0,205,0,0"/>
+
+        <Label 
+            Content="Label" 
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            HorizontalAlignment="Center" 
+            FontSize="25"
+            Margin="0,364,0,0"
+            Background="Bisque"
+            Visibility="Hidden"
+            VerticalAlignment="Top" 
+            Height="50" 
+            Width="300"/>
+
+        <Button 
+            Content="Add Word"
+            IsDefault="True"
+            x:Name="Add_word"
+            HorizontalAlignment="Center" 
+            Margin="0,286,0,0" 
+            FontSize="25"
+            VerticalAlignment="Top" 
+            Height="47" 
+            Width="300"
+            Click="Add_word_Click"/>
+        <Label 
+            Name="WordLabel"
+            Visibility="Hidden"
+            Content="Label" 
+            HorizontalAlignment="Center" 
+            Height="41" 
+            FontSize="20"
+            VerticalContentAlignment="Center"
+            HorizontalContentAlignment="Center"
+            Margin="0,414,0,0"
+            VerticalAlignment="Top" 
+            Width="300"/>
+        <Button 
+            Content="Save and close" 
+            Name="SaveButton"
+            HorizontalAlignment="Center" 
+            Height="47" 
+            Width="300"
+            Margin="0,355,0,0" 
+            FontSize="25"
+            Click="SaveButton_Click"
+            VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

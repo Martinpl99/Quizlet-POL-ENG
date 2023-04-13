@@ -1,0 +1,189 @@
+﻿<Window x:Class="Dictionary_POL_ENG.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dictionary_POL_ENG"
+        mc:Ignorable="d"
+        PreviewKeyDown="Window_PreviewKeyDown"
+        Title="MainWindow" Height="550" Width="751"
+        Closed="Window_Closed">
+    <Grid Background="Brown" RenderTransformOrigin="0.5,0.5" Margin="10,10,10,10" Height="500" Width="700" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="-0.009"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+
+        <Grid Background="CadetBlue" 
+              HorizontalAlignment="Left" 
+              Margin="10,10,0,10" 
+              Width="300">
+
+            <Button x:Name="Rand" 
+                    FontSize="25" 
+                    Content="Rand word [ctrl+q]" 
+                    HorizontalAlignment="Center" 
+                    Margin="0,426,0,0" 
+                    Width="250" 
+                    Height="44" 
+                    VerticalAlignment="Top"
+                    Click="Rand_Click"/>
+
+            <Label x:Name="LabelRand" 
+                   FontSize="25" 
+                   BorderThickness="1" 
+                   BorderBrush="Black" 
+                   Content="Rand word" 
+                   Margin="0,0,0,0" 
+                   Height="45" 
+                   VerticalAlignment="Center" 
+                   HorizontalAlignment="Center" 
+                   Width="280"
+                   HorizontalContentAlignment="Center"
+                   VerticalContentAlignment="Center"/>
+            <Button 
+                x:Name="Delete_btn"
+                IsEnabled="False"
+                Content="Delete word [ctrl+d]" 
+                HorizontalAlignment="Center" 
+                Margin="0,276,0,0" 
+                FontSize="25"
+                VerticalAlignment="Top" 
+                Width="280" 
+                Click="Delete_btn_Click"
+                Height="37"/>
+
+            <Button 
+                x:Name="Change_mode"
+                FontSize="20"
+                HorizontalAlignment="Center" 
+                Height="33" 
+                Margin="0,13,0,0" 
+                VerticalAlignment="Top" 
+                Click="Change_mode_Click"
+                Content="Change Mode [ctrl+w]"
+                Width="262"/>
+            <ProgressBar 
+                HorizontalAlignment="Left" 
+                Height="34"
+                Margin="21,126,0,0" 
+                VerticalAlignment="Top" 
+                x:Name="ProgressBar"
+                Minimum="0"
+                Maximum="2995"
+                Width="262"/>
+            <Label 
+                x:Name="ProgressLabel"
+                Content="Progress"
+                Background="Beige"
+                HorizontalAlignment="Left"
+                Height="40"
+                Margin="21,82,0,0"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                FontSize="20"
+                VerticalAlignment="Top"
+                Width="262"/>
+
+
+        </Grid>
+
+
+
+
+        <Grid Background="DarkSalmon" 
+              HorizontalAlignment="right" 
+              Margin="0,10,10,10" 
+              Width="300">
+
+            <Button 
+                x:Name="CheckButton"
+                IsDefault="True"
+                FontSize="25" 
+                Content="Check [ctrl+a]" 
+                HorizontalAlignment="Center" 
+                Margin="0,431,0,0" Width="250" 
+                Height="39" 
+                VerticalAlignment="Top"
+                Click="CheckButton_Click"/>
+
+            <Button 
+                x:Name="Add_Word"
+                FontSize="25" 
+                Content="Add Word" 
+                HorizontalAlignment="Center" 
+                Margin="0,388,0,0" Width="250" 
+                Height="37" 
+                VerticalAlignment="Top"
+               Click="Add_Word_Click"/>
+
+            <TextBox 
+                x:Name="CheckWord"
+                Focusable="True"
+                FontSize="25" 
+                HorizontalAlignment="Center" 
+                TextWrapping="Wrap" 
+                Text="TextBox"
+                VerticalAlignment="Center" 
+                Width="280" 
+                Height="44"
+                TextAlignment="Center"/>
+            <Label 
+                Content="Answer" 
+                FontSize="20"
+                x:Name="ans_label"
+                Padding="0"
+                Background="Beige"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                HorizontalAlignment="Center" 
+                Height="30" Margin="0,270,0,0" 
+                VerticalAlignment="Top" 
+                Width="280"/>
+            <Button 
+                x:Name="Show_ans_btn"
+                FontSize="20"
+                Content="Show answer [ctrl+e]" 
+                HorizontalAlignment="Center" 
+                Height="42" 
+                Margin="0,335,0,0" 
+                VerticalAlignment="Top" 
+                Click="Show_ans_btn_Click"
+                Width="248"/>
+            <Button 
+                Content="ResetButton" 
+                x:Name="ResetBtn"
+                FontSize="20"
+                HorizontalAlignment="Left"
+                Margin="6,10,0,0"
+                VerticalAlignment="Top"
+                Width="285"
+                Height="33" 
+                Click="ResetBtn_Click"/>
+            <Button 
+                Content="Reload app" 
+                Name="ReloadButton"
+                HorizontalAlignment="Center" 
+                Height="44" 
+                FontSize="25"
+                Margin="0,104,0,0" 
+                Click="ReloadButton_Click"
+                VerticalAlignment="Top" 
+                Width="280"/>
+        </Grid>
+        <Button 
+            Content="Show word list" 
+            x:Name="Show_list_btn"
+            FontSize="25"
+            HorizontalAlignment="Left" 
+            Height="40" 
+            Margin="395,61,0,0" 
+            Click="Show_list_btn_Click"
+            VerticalAlignment="Top" 
+            Width="289"/>
+    </Grid>
+</Window>
